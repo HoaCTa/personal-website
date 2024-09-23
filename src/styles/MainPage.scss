@@ -1,0 +1,116 @@
+@import "./variables";
+@import "./mixins.scss";
+
+// :root {
+//   --yellow: hsl(47, 88%, 63%);
+//   --white: hsl(0, 0%, 100%);
+//   --gray-500: hsl(0, 0%, 42%);
+//   --gray-950: hsl(0, 0%, 7%);
+// }
+
+.main-page {
+  @include flexCenter(column);
+  padding: 2rem;
+  background-color: $yellow;
+  font-family: "Arial", sans-serif;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $gray-950;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $gray-500;
+    margin-bottom: 2rem;
+  }
+
+  //
+
+  //   .profile-info {
+  //     background-color: #fff;
+  //     padding: 1.5rem;
+  //     border-radius: 8px;
+  //     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  //     margin-bottom: 2rem;
+  //     width: 100%;
+  //     max-width: 500px;
+
+  //     h2 {
+  //       font-size: 1.8rem;
+  //       margin-bottom: 1rem;
+  //       color: var(--gray-950);
+  //     }
+
+  //     p {
+  //       font-size: 1.1rem;
+  //       margin: 0.5rem 0;
+  //       color: #333;
+  //     }
+  //   }
+  //
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    border-radius: 50%;
+    width: 60%;
+  }
+
+  .name {
+    color: $blue-ish;
+    margin: 0px;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+
+  .location {
+    color: var(--green);
+    margin: 0px;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+
+  .object {
+    color: $gray-500;
+    margin: 0px;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+  //
+  //   .line {
+  //     height: 2px;
+  //     background: linear-gradient(to right, #007bff, #6c757d);
+  //     margin: 20px 0; // Add margin for spacing
+  //   }
+  //
+
+  .navigation {
+    margin-bottom: 2rem;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+
+      li {
+        a {
+          text-decoration: none;
+          color: var(--gray-950);
+          font-size: 1.2rem;
+          font-weight: bold;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: hsl(211, 100%, 35%);
+          }
+        }
+      }
+    }
+  }
+}
