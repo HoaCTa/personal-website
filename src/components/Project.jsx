@@ -7,7 +7,7 @@ function Project(props) {
       <h3>{props.projectNum}</h3>
       <div className="content">
         <div className="video">
-          <video width="420" height="240" controls>
+          <video controls>
             <source src={props.projectVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

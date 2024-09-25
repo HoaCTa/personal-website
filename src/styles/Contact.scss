@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./mixins";
+
+.contact-container {
+  @include flexCenter(column);
+  padding: 2rem;
+  background-color: $yellow;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+
+  a {
+    @include flexCenter(column);
+    text-decoration: none;
+    background-color: $blue-ish;
+    color: var(--gray-500);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100px;
+    border-radius: 10px;
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./mixins";
+
+.about-container {
+  @include flexCenter(column);
+  padding: 2rem;
+  background-color: $yellow;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+
+  p {
+    font-size: 1.2rem;
+    color: $gray-950;
+    line-height: 1.5rem;
+  }
+}

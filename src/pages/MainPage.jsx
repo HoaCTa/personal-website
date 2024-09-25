@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import Projects from "../components/Projects";
 import "../styles/MainPage.scss";
 import Project from "../components/Project";
+import resume from "../assets/Resume_Hoa_Ta.pdf";
 
 const MainPage = () => {
   return (
@@ -22,7 +23,9 @@ const MainPage = () => {
           </li>
 
           <li>
-            <Link to="/resume">Resume</Link>
+            <a href={resume} download="Resume_Hoa_Ta.pdf">
+              Download Resume
+            </a>
           </li>
         </ul>
       </nav>
@@ -64,6 +67,14 @@ const MainPage = () => {
         projectVideo="path/to/video.mp4"
         projectSkills={["JavaScript", "React", "CSS", "Java"]} // Skills are passed as an array
         projectDescription="This is a description of project 2. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectGitHubLink="https://github.com/username/project1"
+      />
+
+      <Project
+        projectNum="Project 3"
+        projectVideo="path/to/video.mp4"
+        projectSkills={["JavaScript", "React", "CSS", "Java", "HTML"]} // Skills are passed as an array
+        projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
         projectGitHubLink="https://github.com/username/project1"
       />
     </div>

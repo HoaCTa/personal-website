@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
-          <Route path="/resume" element={<Resume />} />
+          {/* <Route path="/resume" element={<Resume />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />{" "}
           {/* Optional if you want a dedicated page */}
