@@ -5,7 +5,7 @@ import MainPage from "./pages/MainPage";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import Projects from "./components/Projects";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           {/* <Route path="/resume" element={<Resume />} /> */}
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="/projects" element={<Projects />} />{" "}
           {/* Optional if you want a dedicated page */}
         </Routes>

@@ -101,7 +101,8 @@
           transition: color 0.3s ease;
 
           &:hover {
-            color: hsl(211, 100%, 35%);
+            color: $blue-ish;
+            font-size: 1.22rem;
           }
         }
       }

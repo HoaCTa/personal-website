@@ -4,14 +4,14 @@ import "../styles/Project.scss";
 function Project(props) {
   return (
     <div className="project">
-      <h3>{props.projectNum}</h3>
+      <div className="video">
+        <video controls>
+          <source src={props.projectVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div className="content">
-        <div className="video">
-          <video controls>
-            <source src={props.projectVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <h3>{props.projectNum}</h3>
 
         {/* Render projectSkills with proper separators (e.g., spaces or commas) */}
         <div className="skills">

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "../styles/MainPage.scss";
 import Project from "../components/Project";
 import resume from "../assets/Resume_Hoa_Ta.pdf";
+import Contact from "./Contact";
 
 const MainPage = () => {
   return (
@@ -17,9 +18,6 @@ const MainPage = () => {
           </li>
           <li>
             <Link to="/experience">Experience</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
           </li>
 
           <li>
@@ -39,11 +37,13 @@ const MainPage = () => {
         <h2 className="location">Santa Ana, CA, United States</h2>
         <h3 className="object">"Software Engineer, Art Enthusiast"</h3>
       </div>
+
       {/* <br color="red" /> */}
       <p>
         Hi, I'm Helen, a Software Engineer with a passion for building amazing
         projects!
       </p>
+      <Contact />
 
       {/* Basic Profile Information */}
       {/* <div className="profile-info">
@@ -58,7 +58,7 @@ const MainPage = () => {
         projectNum="Project 1"
         projectVideo="path/to/video.mp4"
         projectSkills={["JavaScript", "React", "CSS"]} // Skills are passed as an array
-        projectDescription="This is a description of project 1. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectDescription="This is a description of project 1.This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
         projectGitHubLink="https://github.com/username/project1"
       />
 
@@ -66,7 +66,7 @@ const MainPage = () => {
         projectNum="Project 2"
         projectVideo="path/to/video.mp4"
         projectSkills={["JavaScript", "React", "CSS", "Java"]} // Skills are passed as an array
-        projectDescription="This is a description of project 2. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectDescription="This is a description of project 2. This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules.By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
         projectGitHubLink="https://github.com/username/project1"
       />
 
