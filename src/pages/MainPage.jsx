@@ -7,6 +7,18 @@ import Project from "../components/Project";
 import resume from "../assets/Resume_Hoa_Ta.pdf";
 import Contact from "./Contact";
 
+// const pathMap = {
+//   '/': document.getElementById('home_nav'),
+//   '/about': document.getElementById('about_nav'),
+//   '/experience': document.getElementById('contact_nav'),
+// };
+
+// const path = location.pathname;
+
+// if (pathMap[path]) {
+//   pathMap[path].classList.add('active');
+// }
+
 const MainPage = () => {
   return (
     <div className="main-page">
@@ -55,23 +67,61 @@ const MainPage = () => {
 
       {/* <Projects /> */}
       <Project
-        projectNum="Project 1"
+        projectNum="Fabflix Movie Database Web App"
         projectVideo="path/to/video.mp4"
-        projectSkills={["JavaScript", "React", "CSS"]} // Skills are passed as an array
-        projectDescription="This is a description of project 1.This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectSkills={[
+          "HTML",
+          "CSS",
+          "Java",
+          "JavaScript",
+          "MySQL",
+          "RESTful",
+          "Tomcat",
+          "AWS",
+          "Android",
+          "reCAPTCHA",
+        ]}
+        projectDescription="Developed architecture from scratch and implemented an extensive frontend using JavaScript, jQuery, and AJAX,
+while also adapting the frontend functionality to seamlessly integrate with an Android app, ensuring consistent user
+experience across platforms by utilizing the same backend API.
+• Designed and implemented a website with 15 medium features, including display catalog of 1000 movies, secure
+login with SHA256 hashing, bot detection with reCAPTCHA, and full-text search."
         projectGitHubLink="https://github.com/username/project1"
       />
 
       <Project
-        projectNum="Project 2"
+        projectNum="Spotify Browser in Angular"
         projectVideo="path/to/video.mp4"
-        projectSkills={["JavaScript", "React", "CSS", "Java"]} // Skills are passed as an array
-        projectDescription="This is a description of project 2. This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules.By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectSkills={[
+          "JavaScript",
+          "jQuery",
+          "Angular",
+          "NodeJS",
+          "Handjack.js",
+        ]}
+        projectDescription="Developed a Spotify Music Browser webpage utilizing the Spotify API. Created a frontend interface using Angular
+and enabled searching for artists, albums, and tracks.
+• Established communication with a Node.js/Express backend server to browse Spotify music. Implemented gestural
+control functionality using the Handjack.js library for enhanced user interaction."
         projectGitHubLink="https://github.com/username/project1"
       />
 
       <Project
         projectNum="Project 3"
+        projectVideo="path/to/video.mp4"
+        projectSkills={["JavaScript", "React", "CSS", "Java", "HTML"]} // Skills are passed as an array
+        projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectGitHubLink="https://github.com/username/project1"
+      />
+      <Project
+        projectNum="Project 4"
+        projectVideo="path/to/video.mp4"
+        projectSkills={["JavaScript", "React", "CSS", "Java", "HTML"]} // Skills are passed as an array
+        projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectGitHubLink="https://github.com/username/project1"
+      />
+      <Project
+        projectNum="Project 5"
         projectVideo="path/to/video.mp4"
         projectSkills={["JavaScript", "React", "CSS", "Java", "HTML"]} // Skills are passed as an array
         projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
