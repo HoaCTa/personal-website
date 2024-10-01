@@ -1,13 +1,14 @@
 import React from "react";
 // import "./About.scss";
 import "../styles/About.scss";
+import profileImage from "../assets/img/profile1.jpg";
 
 const About = () => {
   return (
     <div className="about">
       <img
         className="profile"
-        src="https://via.placeholder.com/150"
+        src={profileImage}
         alt="profile photo of Helen"
       />
       <div className="content">

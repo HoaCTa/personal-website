@@ -8,9 +8,17 @@ import "../styles/Contact.scss";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa"; // For LinkedIn and GitHub icons
 import { MdEmail } from "react-icons/md"; // For Email icon
+
+import { Button } from "@react-email/button";
+
 // library.add(...all);
 
 // const camera = icon({ prefix: "fas", iconName: "camera" });
+
+const handleEmailClick = (event) => {
+  event.preventDefault(); // Prevent default anchor behavior
+  window.location.href = "mailto:hoata.cam@gmail.com"; // Change to your email
+};
 
 const Contact = () => {
   return (
@@ -31,25 +39,13 @@ const Contact = () => {
       </a>
 
       {/* Email Icon */}
-      <a href="mailto:hoata.cam@gmail.com">
+
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={{hoatavn@gmail.com}}&su=Subject&body=Body%20Text"
+        rel="noopener noreferrer"
+      >
         <MdEmail size={30} />
       </a>
-
-      {/* <a
-        href="https://www.linkedin.com/in/hoata/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn
-      </a>
-      <a
-        href="https://github.com/HoaCTa"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
-      </a>
-      <a href="mailto:hoata.cam@gmail.com">Email Me</a> */}
     </div>
   );
 };

@@ -6,6 +6,7 @@ import "../styles/MainPage.scss";
 import Project from "../components/Project";
 import resume from "../assets/Resume_Hoa_Ta.pdf";
 import Contact from "./Contact";
+import profile from "../assets/img/profile.jpeg";
 
 // const pathMap = {
 //   '/': document.getElementById('home_nav'),
@@ -40,11 +41,7 @@ const MainPage = () => {
         </ul>
       </nav>
       <div class="info">
-        <img
-          className="profile"
-          src="https://via.placeholder.com/150"
-          alt="profile photo of Helen"
-        />
+        <img className="profile" src={profile} alt="profile photo of Helen" />
         <h1 className="name">Helen Ta</h1>
         <h2 className="location">Santa Ana, CA, United States</h2>
         <h3 className="object">"Software Engineer, Art Enthusiast"</h3>
@@ -107,23 +104,23 @@ control functionality using the Handjack.js library for enhanced user interactio
       />
 
       <Project
-        projectNum="Project 3"
+        projectNum="Web Browser"
         projectVideo="path/to/video.mp4"
-        projectSkills={["JavaScript", "React", "CSS", "Java", "HTML"]} // Skills are passed as an array
+        projectSkills={["Python", "Streamlit"]} // Skills are passed as an array
         projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
         projectGitHubLink="https://github.com/username/project1"
       />
       <Project
-        projectNum="Project 4"
+        projectNum="Zotlife App"
         projectVideo="path/to/video.mp4"
-        projectSkills={["JavaScript", "React", "CSS", "Java", "HTML"]} // Skills are passed as an array
+        projectSkills={["Java", "Android", "SQLite"]} // Skills are passed as an array
         projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
         projectGitHubLink="https://github.com/username/project1"
       />
       <Project
-        projectNum="Project 5"
+        projectNum="Predict Airline Ticket"
         projectVideo="path/to/video.mp4"
-        projectSkills={["JavaScript", "React", "CSS", "Java", "HTML"]} // Skills are passed as an array
+        projectSkills={["Python", "NumPy", "Pandas", "Seaborn"]} // Skills are passed as an array
         projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
         projectGitHubLink="https://github.com/username/project1"
       />
