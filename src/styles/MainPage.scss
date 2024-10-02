@@ -1,49 +1,21 @@
 @import "./variables";
 @import "./mixins.scss";
 
-// :root {
-//   --yellow: hsl(47, 88%, 63%);
-//   --white: hsl(0, 0%, 100%);
-//   --gray-500: hsl(0, 0%, 42%);
-//   --gray-950: hsl(0, 0%, 7%);
-// }
-
 .main-page {
   @include flexCenter(column);
   padding: 2rem;
-  background-color: $yellow;
   font-family: "Arial", sans-serif;
+  background-image: url(../assets/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
 
   p {
     font-size: 1.2rem;
-    color: $gray-500;
+    color: $very-dark-blue;
     margin-bottom: 2rem;
   }
 
-  //
-
-  //   .profile-info {
-  //     background-color: #fff;
-  //     padding: 1.5rem;
-  //     border-radius: 8px;
-  //     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  //     margin-bottom: 2rem;
-  //     width: 100%;
-  //     max-width: 500px;
-
-  //     h2 {
-  //       font-size: 1.8rem;
-  //       margin-bottom: 1rem;
-  //       color: var(--gray-950);
-  //     }
-
-  //     p {
-  //       font-size: 1.1rem;
-  //       margin: 0.5rem 0;
-  //       color: #333;
-  //     }
-  //   }
-  //
   .info {
     display: flex;
     flex-direction: column;
@@ -57,7 +29,7 @@
   }
 
   .name {
-    color: $blue-ish;
+    color: $white;
     margin: 0px;
     font-weight: 700;
     font-size: 4rem;
@@ -72,18 +44,10 @@
   }
 
   .object {
-    color: $gray-500;
+    color: $very-dark-blue;
     margin: 0px;
-    font-weight: 400;
     padding-top: 20px;
   }
-  //
-  //   .line {
-  //     height: 2px;
-  //     background: linear-gradient(to right, #007bff, #6c757d);
-  //     margin: 20px 0; // Add margin for spacing
-  //   }
-  //
 
   .navigation {
     margin-bottom: 2rem;
@@ -103,7 +67,7 @@
           transition: color 0.3s ease;
 
           &:hover {
-            color: $blue-ish;
+            color: $white;
             font-size: 1.22rem;
           }
         }

@@ -7,22 +7,12 @@ import Project from "../components/Project";
 import resume from "../assets/Resume_Hoa_Ta.pdf";
 import Contact from "./Contact";
 import profile from "../assets/img/profile.jpeg";
-
-// const pathMap = {
-//   '/': document.getElementById('home_nav'),
-//   '/about': document.getElementById('about_nav'),
-//   '/experience': document.getElementById('contact_nav'),
-// };
-
-// const path = location.pathname;
-
-// if (pathMap[path]) {
-//   pathMap[path].classList.add('active');
-// }
+import background from "../assets/img/background.jpg";
 
 const MainPage = () => {
   return (
     <div className="main-page">
+      <div className="background-overlay" />
       {/* Links to Other Pages */}
       <nav className="navigation">
         <ul>
