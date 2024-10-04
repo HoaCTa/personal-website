@@ -35,13 +35,18 @@
       font-weight: bold;
       border-radius: 3px;
     }
-    p {
+    .description {
       color: black;
       margin-bottom: 0.75rem;
+      font-size: 1.2rem;
       line-height: 2rem;
+      .description-item {
+        display: block;
+        margin: 1rem 0;
+      }
     }
     h3 {
-      color: black;
+      color: $cream;
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }

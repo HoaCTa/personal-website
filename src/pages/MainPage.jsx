@@ -68,11 +68,10 @@ const MainPage = () => {
           "Android",
           "reCAPTCHA",
         ]}
-        projectDescription="Developed architecture from scratch and implemented an extensive frontend using JavaScript, jQuery, and AJAX,
-while also adapting the frontend functionality to seamlessly integrate with an Android app, ensuring consistent user
-experience across platforms by utilizing the same backend API.
-• Designed and implemented a website with 15 medium features, including display catalog of 1000 movies, secure
-login with SHA256 hashing, bot detection with reCAPTCHA, and full-text search."
+        projectDescription={[
+          "• Developed architecture from scratch and implemented an extensive frontend using JavaScript, jQuery, and AJAX, while also adapting the frontend functionality to seamlessly integrate with an Android app, ensuring consistent user experience across platforms by utilizing the same backend API.",
+          "• Designed and implemented a website with 15 medium features, including display catalog of 1000 movies, secure login with SHA256 hashing, bot detection with reCAPTCHA, and full-text search.",
+        ]}
         projectGitHubLink="https://github.com/username/project1"
       />
 
@@ -86,10 +85,10 @@ login with SHA256 hashing, bot detection with reCAPTCHA, and full-text search."
           "NodeJS",
           "Handjack.js",
         ]}
-        projectDescription="Developed a Spotify Music Browser webpage utilizing the Spotify API. Created a frontend interface using Angular
-and enabled searching for artists, albums, and tracks.
-• Established communication with a Node.js/Express backend server to browse Spotify music. Implemented gestural
-control functionality using the Handjack.js library for enhanced user interaction."
+        projectDescription={[
+          "• Developed a Spotify Music Browser webpage utilizing the Spotify API. Created a frontend interface using Angular and enabled searching for artists, albums, and tracks.",
+          "• Established communication with a Node.js/Express backend server to browse Spotify music. Implemented gestural control functionality using the Handjack.js library for enhanced user interaction.",
+        ]}
         projectGitHubLink="https://github.com/username/project1"
       />
 
@@ -97,21 +96,31 @@ control functionality using the Handjack.js library for enhanced user interactio
         projectNum="Web Browser"
         projectVideo="path/to/video.mp4"
         projectSkills={["Python", "Streamlit"]} // Skills are passed as an array
-        projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectDescription={[
+          "• This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. ",
+          "• By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. ",
+          "• By using these variables, we can easily reuse the values across multiple CSS rules",
+        ]}
         projectGitHubLink="https://github.com/username/project1"
       />
       <Project
         projectNum="Zotlife App"
         projectVideo="path/to/video.mp4"
         projectSkills={["Java", "Android", "SQLite"]} // Skills are passed as an array
-        projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectDescription={[
+          "• This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules.",
+          "• By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules.",
+        ]}
         projectGitHubLink="https://github.com/username/project1"
       />
       <Project
-        projectNum="Predict Airline Ticket"
+        projectNum="Airline Ticket Prediction"
         projectVideo="path/to/video.mp4"
-        projectSkills={["Python", "NumPy", "Pandas", "Seaborn"]} // Skills are passed as an array
-        projectDescription="This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules"
+        projectSkills={["Python", "NumPy", "Pandas", "Seaborn"]}
+        projectDescription={[
+          "• This is a description of project 3. By using these variables, we can easily reuse the values across multiple CSS rules.",
+          "• By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules. By using these variables, we can easily reuse the values across multiple CSS rules.",
+        ]}
         projectGitHubLink="https://github.com/username/project1"
       />
     </div>

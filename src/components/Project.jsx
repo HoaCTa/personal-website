@@ -21,7 +21,14 @@ function Project(props) {
         </div>
 
         {/* Add some spacing here */}
-        <p className="description">{props.projectDescription}</p>
+        {/* <p className="description">{props.projectDescription}</p> */}
+        <div className="description">
+          {props.projectDescription.map((description, index) => (
+            <span key={index} className="description-item">
+              {description}
+            </span>
+          ))}
+        </div>
 
         <a
           href={props.projectGitHubLink}

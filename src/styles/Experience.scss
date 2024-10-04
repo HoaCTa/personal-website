@@ -7,13 +7,15 @@
   font-size: 16px;
   padding: 4rem;
   margin: 0px;
-  height: 100vh;
+  // height: 100vh;
   background-image: url(../assets/img/background.jpg);
   background-size: cover;
   background-position: center;
   opacity: 1;
+  // width: 100%;
 
   h1 {
+    margin-top: 2rem;
     color: black;
     font-size: 3rem;
   }
@@ -54,7 +56,12 @@
       h3 {
         margin: 0;
         font-size: 1.4rem;
-        color: $very-dark-blue;
+        color: $cream;
+      }
+
+      .description,
+      p {
+        font-size: large;
       }
     }
 
@@ -69,4 +76,52 @@
       border: 2px solid $white;
     }
   }
+
+  @media (max-width: 550px) {
+    padding: 2rem; /* Reduce padding for smaller screens */
+
+    h1 {
+      font-size: 2rem; /* Make the header smaller */
+    }
+
+    .timeline {
+      padding: 0.5rem; /* Reduce padding for the timeline */
+      margin-left: 5px; /* Adjust left margin */
+      border-left-width: 3px; /* Reduce the border width */
+    }
+
+    .timeline-event {
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+
+      .timeline-date {
+        font-size: 1rem; /* Adjust date font size */
+      }
+
+      .timeline-content {
+        padding: 0.5rem;
+        font-size: 1rem; /* Adjust font size */
+        line-height: 1.5rem; /* Adjust line height */
+      }
+
+      h3 {
+        font-size: 1.2rem; /* Make the h3 smaller */
+      }
+
+      .description,
+      p {
+        font-size: 0.9rem; /* Adjust description font size */
+      }
+
+      &:before {
+        width: 10px;
+        height: 10px;
+        left: -6px; /* Adjust position of the timeline circle */
+      }
+    }
+  }
+
+  // @media (min-width: 1010px) {
+  //   height: 100vh;
+  // }
 }
